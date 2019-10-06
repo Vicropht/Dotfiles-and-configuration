@@ -1,3 +1,5 @@
+# Shamelessly copied from Jieverson's WSL Dotfiles: https://github.com/jieverson/dotfiles-win
+
 echo "apt update..."
 sudo apt -qq update
 echo "✔ update done!"

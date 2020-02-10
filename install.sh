@@ -1,4 +1,4 @@
-# Shamelessly copied from Jieverson's WSL Dotfiles: https://github.com/jieverson/dotfiles-win
+# Inspired by Jieverson's WSL Dotfiles: https://github.com/jieverson/dotfiles-win
 
 echo "apt update..."
 sudo apt -qq update
@@ -36,8 +36,7 @@ echo "✔ other configs symlinked"
 
 mkdir -p ~/.bin
 ln -sf $(pwd)/bin/start ~/.bin/start
-ln -sf /mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe ~/.bin/chrome
-ln -sf /mnt/c/Program\ Files/MPC-HC/mpc-hc64.exe ~/.bin/mpchc
+ln -sf /mnt/c/Program\ Files\ \(x86\)/BraveSoftware/Brave-Browser/Application/brave.exe ~/.bin/chrome
 echo "✔ alias for windows programs"
 
 mkdir -p ~/.scripts
@@ -48,19 +47,15 @@ ln -sf /mnt/c ~/c
 rm -f ~/projects
 ln -sf /mnt/c/Projects ~/projects
 rm -f ~/downloads
-ln -sf /mnt/c/Users/jieverson/Downloads ~/downloads
+ln -sf /mnt/c/Users/victo/Downloads ~/downloads
 rm -f ~/pictures
-ln -sf /mnt/c/Users/jieverson/Pictures ~/pictures
+ln -sf /mnt/c/Users/victo/Pictures ~/pictures
 echo "✔ alias for windows folders"
 
-curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt -qq install nodejs
 sudo apt -qq install npm
-sudo apt -qq install python-pip
 echo "✔ apt dev tools installed"
 
-sudo npm install -g bower gulp grunt yo less mdpdf
-echo "✔ npm -g dev tools installed"
-
-sudo apt -qq install caca-utils ranger cowsay fortune screenfetch lolcat figlet sl cmatrix
+sudo apt -qq install caca-utils ranger cowsay screenfetch figlet sl cmatrix
 echo "✔ other cool stuff installed"

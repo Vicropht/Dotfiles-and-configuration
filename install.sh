@@ -39,9 +39,6 @@ ln -sf $(pwd)/bin/start ~/.bin/start
 ln -sf /mnt/c/Program\ Files\ \(x86\)/BraveSoftware/Brave-Browser/Application/brave.exe ~/.bin/chrome
 echo "✔ alias for windows programs"
 
-mkdir -p ~/.scripts
-cp $(pwd)/scripts/* ~/.scripts/
-
 rm -f ~/c
 ln -sf /mnt/c ~/c
 rm -f ~/projects

@@ -11,8 +11,8 @@ $ git clone https://github.com/Vicropht/dotfiles.git ~/.dotfiles
 $ sudo ~/.dotfiles/install.sh
 ```
 
-To use my settings, just copy the Hyper/Cmder folder to your Windows home directory
+To use my settings, just copy the Hyper.js file to your Windows home directory or import the cmder settings
 
 ```
-cp ./.hyper.js ~/c/Users/{YOUR_USER}/
+cp .hyper.js /mnt/c/Users/{YOUR_USER}/
 ```

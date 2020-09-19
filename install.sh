@@ -18,10 +18,10 @@ echo "✔ zsh as default shell"
 [ -d ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting ] || git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
 # synlink oh-my-zsh theme
-mkdir -p ~/.oh-my-zsh && mkdir -p ~/.oh-my-zsh/themes
-ln -sf $(pwd)/oh-my-zsh/themes/lambda_robbyrussell.zsh-theme ~/.oh-my-zsh/themes/lambda_robbyrussell.zsh-theme
-ln -sf $(pwd)/oh-my-zsh/themes/emoji_robbyrussell.zsh-theme ~/.oh-my-zsh/themes/emoji_robbyrussell.zsh-theme
-echo "✔ oh my zsh configured!"
+#mkdir -p ~/.oh-my-zsh && mkdir -p ~/.oh-my-zsh/themes
+#ln -sf $(pwd)/oh-my-zsh/themes/lambda_robbyrussell.zsh-theme ~/.oh-my-zsh/themes/lambda_robbyrussell.zsh-theme
+#ln -sf $(pwd)/oh-my-zsh/themes/emoji_robbyrussell.zsh-theme ~/.oh-my-zsh/themes/emoji_robbyrussell.zsh-theme
+#echo "✔ oh my zsh configured!"
 
 ln -sf $(pwd)/zshrc ~/.zshrc
 echo "✔ .zshrc symlinked"
@@ -41,8 +41,8 @@ echo "✔ alias for windows programs"
 
 rm -f ~/c
 ln -sf /mnt/c ~/c
-rm -f ~/projects
-ln -sf /mnt/c/Projects ~/projects
+#rm -f ~/projects
+#ln -sf /mnt/c/Projects ~/projects
 rm -f ~/downloads
 ln -sf /mnt/c/Users/victo/Downloads ~/downloads
 rm -f ~/pictures
@@ -54,7 +54,7 @@ sudo apt -qq install nodejs
 sudo apt -qq install npm
 echo "✔ apt dev tools installed"
 
-sudo apt -qq install caca-utils ranger cowsay screenfetch figlet sl cmatrix
+sudo apt -qq install caca-utils ranger screenfetch figlet sl cmatrix
 echo "✔ other cool stuff installed"
 
 # https://github.com/denysdovhan/spaceship-prompt

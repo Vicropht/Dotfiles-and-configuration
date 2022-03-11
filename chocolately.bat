@@ -13,22 +13,18 @@ ECHO CHOOSE YOUR OPTION (1-4)
 ECHO ...............................................
 ECHO.
 ECHO 1 - Basic apps
-ECHO 2 - Developer apps
-ECHO 3 - Install Chocolatey (For the first time using this)
-ECHO 4 - Upgrade apps
-ECHO 5 - EXIT
+ECHO 2 - Install Chocolatey (For the first time using this)
+ECHO 3 - Upgrade apps
+ECHO 4 - EXIT
 ECHO.
 
 
 SET /P M=Type 1, 2, 3, or 4 then press ENTER:
 IF %M%==1 GOTO GEN
-IF %M%==2 GOTO GEN
 IF %M%==3 GOTO FIR
 IF %M%==4 GOTO UPG
 IF %M%==5 GOTO EOF
 
-
-REM developer tools
 :FIR
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 choco feature enable -n allowGlobalConfirmation
@@ -46,12 +42,6 @@ GOTO MENU
 :GEN
 REM basic apps
 choco install %currentpath%\defaultapps.config   
-IF %M%==2 GOTO DEV
-GOTO MENU
-
-:DEV
-REM developer tools
-choco install %currentpath%\devapps.config   
 GOTO MENU
 
 :EOF

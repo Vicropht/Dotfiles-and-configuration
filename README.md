@@ -17,4 +17,4 @@ To use my settings, just copy the Hyper.js file to your Windows home directory o
 cp .hyper.js /mnt/c/Users/{YOUR_USER}/
 ```
 ### Windows Terminal
-I am using Windows Terminal now. Haven't changed the script for it though, for now I'll just [link this post](https://medium.com/@hjgraca/style-your-windows-terminal-and-wsl2-like-a-pro-9a2e1ad4c9d0) that got me thought it:
+I am using Windows Terminal now. Haven't changed the script for it though, for now I'll just [link this post](https://medium.com/@hjgraca/style-your-windows-terminal-and-wsl2-like-a-pro-9a2e1ad4c9d0) that got me thought it.
